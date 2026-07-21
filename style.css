@@ -1,0 +1,236 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Global Styling */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header {
+    background-color: #0f4c81;
+    color: white;
+    padding: 25px 0;
+}
+
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+header p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: #ffd166;
+}
+
+
+/* Hero Section */
+
+#hero {
+    padding: 70px 0;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.hero-content {
+    flex: 1;
+}
+
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #0f4c81;
+    margin-bottom: 15px;
+}
+
+
+.hero img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #0f4c81;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #0f4c81;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.btn:hover {
+    background-color: #08304f;
+}
+
+
+/* Sections */
+
+section {
+    padding: 60px 0;
+}
+
+
+section h2 {
+    text-align: center;
+    color: #0f4c81;
+    margin-bottom: 30px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+
+.card h3 {
+    color: #0f4c81;
+    padding: 15px;
+}
+
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+
+/* GitHub Section */
+
+#github {
+    background-color: #e9eef5;
+}
+
+
+/* Contact Section */
+
+#contact {
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0f4c81;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .hero img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .card {
+        width: 90%;
+    }
+
+}
